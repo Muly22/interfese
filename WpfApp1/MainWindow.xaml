@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid Background="WhiteSmoke">
+        <Border MinWidth="600" Margin="15" Background="White" VerticalAlignment="Center" MaxWidth="660" Padding="30" CornerRadius="8">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="40" Color="Gray" ShadowDepth="5" />
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Вы лох? Вам не дают девушки?" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                <Grid Margin="0 0 0 20">
+                    <Button HorizontalAlignment="Left" Content="Тогда жми на эту кнопку!"/>
+                    <Button HorizontalAlignment="Right" Content="войти" Style="{StaticResource MaterialDesignFlatButton}"/>
+                </Grid>
+                <TextBox materialDesign:HintAssist.Hint="логин пжжпжпжпжп" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 0 0 20"/>
+                <Button Content="Скорее регайся!!! И получишь в бонус ПО ЕБАЛУ!!!" Margin="0 20"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
